@@ -4,7 +4,7 @@ new_student = input()  # user input for new student name.
 print("Enter grade for " + new_student + ":")
 new_grade = input()  # Input for new student grade.
 school[new_student] = new_grade  # Add new student and grade to the dictionary.
-print("Enter name of existing student to update grade:")  # Input for existing student grade update.
+print("Enter name of existing student to update grade, write only small letters:")  # Input for existing student grade update.
 existing_student = input()  # Input for existing student name.
 if existing_student in school:  # Check if the student exists in the dictionary.
     print("Enter new grade for " + existing_student + ":")
