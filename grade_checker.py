@@ -1,5 +1,5 @@
-a = int(input("Enter your markes and get to know about your Grade: "))
-if a > 90:
+a = int(input("Enter your markes and get to know about your Grade: "))   #all input provided by user will be converted in integer
+if a > 90:                             #here starts the if conditions for each condition given in the assignment
     print("Excellent! Your grade is A")
 elif a >= 80 and a < 90:
     print("Good Job! Your grade is B")
