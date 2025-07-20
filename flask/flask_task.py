@@ -4,7 +4,7 @@ import json
 app = Flask(__name__)
 @app.route('/')
 def home():
-    return 'This is home page for getting json data'
+    return 'This is home page for getting json data, to get data hit the /api path with data, e.g., /api?name=yourname&age=yourage'
 
 @app.route('/api', methods=['GET', 'POST'])
 def api():
