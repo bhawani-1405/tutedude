@@ -1,0 +1,49 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <p>Welcome to the Registration Form, enter details and submit</p>
+
+    <div class="centred">
+
+        <form action="/submit" method="POST">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" value="{{ name or '' }}" required>
+            <br>
+            <label for="city">City *</label>
+            <input type="text" id="city" name="city" placeholder="Enter your city" value="{{ city or '' }}" required>
+            <br>
+            <label for="course">Course *</label>
+            <input type="text" id="course" name="course" placeholder="Enter your course" value="{{ course or '' }}" required>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+
+    </div>
+</body>
+
+</body>
+<style>
+    body {
+        background-color: #f4f4f4;
+    }
+
+    p {
+        text-align: center;
+        font-size: 20px;
+        color: #333;
+    }
+
+    .centred {
+        width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+</style>
